@@ -338,6 +338,10 @@ public class StepperLayout extends LinearLayout implements TabsContainer.TabItem
             }
         });
     }
+    
+    public void invalidateProgressBar() {
+        mStepperType.onNewAdapter(this.mStepAdapter);
+    }
 
     /**
      * Sets the new step adapter and updates the stepper layout based on the new adapter.
